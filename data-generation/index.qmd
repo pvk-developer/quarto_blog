@@ -1,0 +1,12 @@
+---
+title: "Data Generation"
+listing:
+  contents: data-generation
+  sort: "date desc"
+  type: default
+  categories: true
+---
+
+# Data Generation
+
+Placeholder content for Data Generation.

@@ -1,0 +1,12 @@
+---
+title: "Getting Started"
+listing:
+  contents: getting-started
+  sort: "date desc"
+  type: default
+  categories: true
+---
+
+# Getting Started
+
+Placeholder content for Getting Started.

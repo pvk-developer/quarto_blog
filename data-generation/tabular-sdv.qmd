@@ -1,0 +1,9 @@
+---
+title: "Generating Tabular Data with SDV"
+date: 2025-03-21
+categories: data-generation
+---
+
+# Generating Tabular Data with SDV
+
+Learn about CTGAN, TVAE, and GaussianCopula for tabular synthetic data.

@@ -1,0 +1,12 @@
+---
+title: "Privacy Security"
+listing:
+  contents: privacy-security
+  sort: "date desc"
+  type: default
+  categories: true
+---
+
+# Privacy Security
+
+Placeholder content for Privacy Security.

@@ -1,0 +1,9 @@
+---
+title: "Ensuring Privacy in Synthetic Data"
+date: 2025-03-21
+categories: privacy-security
+---
+
+# Privacy in Synthetic Data
+
+How SDV ensures privacy when generating synthetic data.

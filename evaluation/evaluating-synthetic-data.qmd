@@ -1,0 +1,9 @@
+---
+title: "Evaluating Synthetic Data Quality"
+date: 2025-03-21
+categories: evaluation
+---
+
+# Evaluating Synthetic Data
+
+Metrics and approaches to evaluate the quality of synthetic data.
