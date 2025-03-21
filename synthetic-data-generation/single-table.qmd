@@ -1,0 +1,16 @@
+title: "Generating SingleTable Data with SDV"
+date: 2025-03-21
+categories: data-generation
+author: "John Doe"
+description: "Learn how to generate single table synthetic data using SDV models."
+
+
+# Generating Tabular Data with SDV
+
+SDV provides multiple models for generating tabular synthetic data, including:
+
+- **CTGAN** (Conditional GAN)
+- **TVAE** (Tabular Variational Autoencoder)
+- **GaussianCopula**
+
+Let's explore an example.

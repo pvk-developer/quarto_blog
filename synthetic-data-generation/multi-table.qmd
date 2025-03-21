@@ -1,0 +1,18 @@
+title: "Generating MultiTable Data with SDV"
+date: 2025-03-10
+categories: synthetic-data-generation
+author: "John Doe"
+description: "Learn how to generate multi table synthetic data using SDV."
+
+
+# Generating Relational Data with SDV
+
+SDV provides **Multi-Table Models** that help in generating relational synthetic data.
+
+- **Synthesizing multiple linked tables**
+- **Preserving foreign key relationships**
+- **Ensuring data consistency**
+
+```python
+
+```

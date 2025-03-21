@@ -1,0 +1,10 @@
+title: "Data Generation Techniques"
+listing:
+  contents: data-generation
+  sort: "date desc"
+  type: default
+  categories: true
+
+# Data Generation with SDV
+
+Explore different synthetic data generation techniques:
