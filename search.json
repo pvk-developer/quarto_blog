@@ -39,14 +39,21 @@
     "href": "index.html",
     "title": "Welcome to SDV Gigs",
     "section": "",
-    "text": "Welcome to SDV Gigs\nExplore various topics related to Synthetic Data Vault (SDV)."
+    "text": "Welcome to SDV Gigs\nExplore various topics related to Synthetic Data Vault (SDV).",
+    "crumbs": [
+      "Home"
+    ]
   },
   {
     "objectID": "privacy-security/index.html",
     "href": "privacy-security/index.html",
     "title": "Privacy Security",
     "section": "",
-    "text": "Privacy Security\nPlaceholder content for Privacy Security.\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Privacy Security\nPlaceholder content for Privacy Security.\n\n\n\n\n\n\n\n\n\n\nNo matching items",
+    "crumbs": [
+      "Topics",
+      "Privacy & Security"
+    ]
   },
   {
     "objectID": "privacy-security/sdv-privacy.html",
@@ -60,14 +67,22 @@
     "href": "evaluation/index.html",
     "title": "Evaluation",
     "section": "",
-    "text": "Evaluation\nPlaceholder content for Evaluation.\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Evaluation\nPlaceholder content for Evaluation.\n\n\n\n\n\n\n\n\n\n\nNo matching items",
+    "crumbs": [
+      "Topics",
+      "Evaluation"
+    ]
   },
   {
     "objectID": "getting-started/index.html",
     "href": "getting-started/index.html",
     "title": "Getting Started",
     "section": "",
-    "text": "Getting Started\nPlaceholder content for Getting Started.\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Getting Started\nPlaceholder content for Getting Started.\n\n\n\n\n\n\n\n\n\n\nNo matching items",
+    "crumbs": [
+      "Topics",
+      "Getting Started"
+    ]
   },
   {
     "objectID": "synthetic-data-generation/multi-table.html",
@@ -81,6 +96,10 @@
     "href": "data-generation/index.html",
     "title": "Data Generation",
     "section": "",
-    "text": "Data Generation\nPlaceholder content for Data Generation.\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Data Generation\nPlaceholder content for Data Generation.\n\n\n\n\n\n\n\n\n\n\nNo matching items",
+    "crumbs": [
+      "Topics",
+      "Data Generation"
+    ]
   }
 ]
