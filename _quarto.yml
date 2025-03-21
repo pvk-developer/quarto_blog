@@ -4,18 +4,22 @@ project:
 
 website:
   title: "SDV Gigs"
-  navbar:
-    left:
+  sidebar:
+    style: docked
+    search: true
+    contents:
       - text: "Home"
         href: index.qmd
-      - text: "Getting Started"
-        href: getting-started/index.qmd
-      - text: "Data Generation"
-        href: data-generation/index.qmd
-      - text: "Privacy & Security"
-        href: privacy-security/index.qmd
-      - text: "Evaluation"
-        href: evaluation/index.qmd
+      - section: "Topics"
+        contents:
+          - text: "Getting Started"
+            href: getting-started/index.qmd
+          - text: "Data Generation"
+            href: data-generation/index.qmd
+          - text: "Privacy & Security"
+            href: privacy-security/index.qmd
+          - text: "Evaluation"
+            href: evaluation/index.qmd
 
 collections:
   getting-started:
@@ -34,3 +38,12 @@ collections:
   evaluation:
     title: "Evaluating Synthetic Data"
     sort: "date desc"
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+
+
