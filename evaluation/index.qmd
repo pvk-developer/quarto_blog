@@ -1,12 +1,9 @@
 ---
-title: "Evaluation"
+title: "Evaluating Synthetic Data"
 listing:
-  contents: evaluation
+  contents:
+      - "*.qmd"
   sort: "date desc"
   type: default
   categories: true
 ---
-
-# Evaluation
-
-Placeholder content for Evaluation.

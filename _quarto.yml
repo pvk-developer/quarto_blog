@@ -3,10 +3,8 @@ project:
   output-dir: docs
 
 website:
-  title: "SDV Gigs"
+  title: "SDV Posts"
   sidebar:
-    style: docked
-    search: true
     contents:
       - text: "Home"
         href: index.qmd
@@ -18,12 +16,15 @@ website:
             href: data-generation/index.qmd
           - text: "Privacy & Security"
             href: privacy-security/index.qmd
-          - text: "Evaluation"
+          - section: "Evaluation"
             href: evaluation/index.qmd
+            contents:
+              "evaluation/*.qmd"
 
 collections:
   getting-started:
     title: "Getting Started with SDV"
+    categories: true
     sort: "date desc"
 
   data-generation:
@@ -33,10 +34,12 @@ collections:
 
   privacy-security:
     title: "Privacy & Security"
+    categories: true
     sort: "date desc"
 
   evaluation:
     title: "Evaluating Synthetic Data"
+    categories: true
     sort: "date desc"
 
 format:
@@ -44,6 +47,3 @@ format:
     theme: cosmo
     css: styles.css
     toc: true
-
-
-

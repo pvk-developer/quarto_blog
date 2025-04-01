@@ -7,3 +7,5 @@ categories: evaluation
 # Evaluating Synthetic Data
 
 Metrics and approaches to evaluate the quality of synthetic data.
+
+We have two main evaluation functions, the Diagnostic Report and the Quality Report

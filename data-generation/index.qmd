@@ -1,5 +1,5 @@
 ---
-title: "Data Generation"
+title: "Synthetic Data Generation"
 listing:
   contents: data-generation
   sort: "date desc"

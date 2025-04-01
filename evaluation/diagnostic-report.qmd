@@ -1,0 +1,56 @@
+---
+title: "Diagnostic Report"
+date: 2025-03-21
+categories: ["evaluation"]
+---
+
+# Diagnostic report
+
+In this example we will use single table.
+
+```{python}
+# | echo: false
+# | output: false
+import warnings
+
+warnings.filterwarnings("ignore", category=UserWarning)
+
+from sdv.datasets.demo import download_demo
+real_data, metadata = download_demo('single_table', 'fake_hotel_guests')
+
+from sdv.single_table import GaussianCopulaSynthesizer
+
+# Step 1: Create the synthesizer
+synthesizer = GaussianCopulaSynthesizer(metadata)
+
+# Step 2: Train the synthesizer
+synthesizer.fit(real_data)
+
+# Step 3: Generate synthetic data
+synthetic_data = synthesizer.sample(num_rows=len(real_data))
+```
+
+The Diagnostic Report runs some basic checks for data format and validity. Run this to ensure that you have created valid synthetic data.
+
+
+
+```{python}
+from sdv.evaluation.single_table import run_diagnostic, evaluate_quality
+from sdv.evaluation.single_table import get_column_plot
+
+# 1. perform basic validity checks
+diagnostic = run_diagnostic(real_data, synthetic_data, metadata)
+
+# 2. measure the statistical similarity
+quality_report = evaluate_quality(real_data, synthetic_data, metadata)
+
+# 3. plot the data
+fig = get_column_plot(
+    real_data=real_data,
+    synthetic_data=synthetic_data,
+    metadata=metadata,
+    column_name='amenities_fee'
+)
+fig.show()
+```
+
