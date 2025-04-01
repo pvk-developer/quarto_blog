@@ -1,6 +1,6 @@
 [
   {
-    "listing": "/synthetic-data-generation/index.html",
+    "listing": "/getting-started/index.html",
     "items": []
   },
   {
@@ -9,11 +9,10 @@
   },
   {
     "listing": "/evaluation/index.html",
-    "items": []
-  },
-  {
-    "listing": "/getting-started/index.html",
-    "items": []
+    "items": [
+      "/evaluation/diagnostic-report.html",
+      "/evaluation/evaluating-synthetic-data.html"
+    ]
   },
   {
     "listing": "/data-generation/index.html",

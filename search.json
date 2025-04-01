@@ -7,39 +7,34 @@
     "text": "Generating Tabular Data with SDV\nLearn about CTGAN, TVAE, and GaussianCopula for tabular synthetic data."
   },
   {
-    "objectID": "synthetic-data-generation/single-table.html",
-    "href": "synthetic-data-generation/single-table.html",
-    "title": "Generating Tabular Data with SDV",
-    "section": "",
-    "text": "title: “Generating SingleTable Data with SDV” date: 2025-03-21 categories: data-generation author: “John Doe” description: “Learn how to generate single table synthetic data using SDV models.”\n\nGenerating Tabular Data with SDV\nSDV provides multiple models for generating tabular synthetic data, including:\n\nCTGAN (Conditional GAN)\nTVAE (Tabular Variational Autoencoder)\nGaussianCopula\n\nLet’s explore an example."
-  },
-  {
-    "objectID": "synthetic-data-generation/index.html",
-    "href": "synthetic-data-generation/index.html",
-    "title": "Data Generation Techniques",
-    "section": "",
-    "text": "Data Generation with SDV\nExplore different synthetic data generation techniques:\n\n\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "getting-started/getting-started-guide.html",
-    "href": "getting-started/getting-started-guide.html",
+    "objectID": "getting-started/index.html",
+    "href": "getting-started/index.html",
     "title": "Getting Started with SDV",
     "section": "",
-    "text": "Getting Started with SDV\nThis post introduces SDV and its core functionalities."
+    "text": "Getting Started\nPlaceholder content for Getting Started.\n\n\n\n\n\n\n\n\n\n\nNo matching items",
+    "crumbs": [
+      "Topics",
+      "Getting Started"
+    ]
   },
   {
     "objectID": "evaluation/evaluating-synthetic-data.html",
     "href": "evaluation/evaluating-synthetic-data.html",
     "title": "Evaluating Synthetic Data Quality",
     "section": "",
-    "text": "Evaluating Synthetic Data\nMetrics and approaches to evaluate the quality of synthetic data."
+    "text": "Evaluating Synthetic Data\nMetrics and approaches to evaluate the quality of synthetic data.\nWe have two main evaluation functions, the Diagnostic Report and the Quality Report",
+    "crumbs": [
+      "Topics",
+      "Evaluation",
+      "Evaluating Synthetic Data Quality"
+    ]
   },
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Welcome to SDV Gigs",
+    "title": "Welcome to SDV Blog Posts",
     "section": "",
-    "text": "Welcome to SDV Gigs\nExplore various topics related to Synthetic Data Vault (SDV).",
+    "text": "Welcome to SDV\nExplore various topics related to Synthetic Data Vault (SDV).",
     "crumbs": [
       "Home"
     ]
@@ -47,7 +42,7 @@
   {
     "objectID": "privacy-security/index.html",
     "href": "privacy-security/index.html",
-    "title": "Privacy Security",
+    "title": "Privacy & Security",
     "section": "",
     "text": "Privacy Security\nPlaceholder content for Privacy Security.\n\n\n\n\n\n\n\n\n\n\nNo matching items",
     "crumbs": [
@@ -65,36 +60,37 @@
   {
     "objectID": "evaluation/index.html",
     "href": "evaluation/index.html",
-    "title": "Evaluation",
+    "title": "Evaluating Synthetic Data",
     "section": "",
-    "text": "Evaluation\nPlaceholder content for Evaluation.\n\n\n\n\n\n\n\n\n\n\nNo matching items",
+    "text": "Diagnostic Report\n\n\n\n\n\n\nevaluation\n\n\n\n\n\n\n\n\n\nMar 21, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nEvaluating Synthetic Data Quality\n\n\n\n\n\n\nevaluation\n\n\n\n\n\n\n\n\n\nMar 21, 2025\n\n\n\n\n\n\nNo matching items",
     "crumbs": [
       "Topics",
       "Evaluation"
     ]
   },
   {
-    "objectID": "getting-started/index.html",
-    "href": "getting-started/index.html",
-    "title": "Getting Started",
+    "objectID": "evaluation/diagnostic-report.html",
+    "href": "evaluation/diagnostic-report.html",
+    "title": "Diagnostic Report",
     "section": "",
-    "text": "Getting Started\nPlaceholder content for Getting Started.\n\n\n\n\n\n\n\n\n\n\nNo matching items",
+    "text": "Diagnostic report\nIn this example we will use single table.\nThe Diagnostic Report runs some basic checks for data format and validity. Run this to ensure that you have created valid synthetic data.\n\nfrom sdv.evaluation.single_table import run_diagnostic, evaluate_quality\nfrom sdv.evaluation.single_table import get_column_plot\n\n# 1. perform basic validity checks\ndiagnostic = run_diagnostic(real_data, synthetic_data, metadata)\n\n# 2. measure the statistical similarity\nquality_report = evaluate_quality(real_data, synthetic_data, metadata)\n\n# 3. plot the data\nfig = get_column_plot(\n    real_data=real_data,\n    synthetic_data=synthetic_data,\n    metadata=metadata,\n    column_name='amenities_fee'\n)\nfig.show()\n\nGenerating report ...\n\n|          | 0/9 [00:00&lt;?, ?it/s]|(1/2) Evaluating Data Validity: |          | 0/9 [00:00&lt;?, ?it/s]|(1/2) Evaluating Data Validity: |██████████| 9/9 [00:00&lt;00:00, 1839.88it/s]|\nData Validity Score: 100.0%\n\n|          | 0/1 [00:00&lt;?, ?it/s]|(2/2) Evaluating Data Structure: |          | 0/1 [00:00&lt;?, ?it/s]|(2/2) Evaluating Data Structure: |██████████| 1/1 [00:00&lt;00:00, 503.46it/s]|\nData Structure Score: 100.0%\n\nOverall Score (Average): 100.0%\n\nGenerating report ...\n\n|          | 0/9 [00:00&lt;?, ?it/s]|(1/2) Evaluating Column Shapes: |          | 0/9 [00:00&lt;?, ?it/s]|(1/2) Evaluating Column Shapes: |██████████| 9/9 [00:00&lt;00:00, 1392.02it/s]|\nColumn Shapes Score: 90.06%\n\n|          | 0/36 [00:00&lt;?, ?it/s]|(2/2) Evaluating Column Pair Trends: |          | 0/36 [00:00&lt;?, ?it/s]|(2/2) Evaluating Column Pair Trends: |██████████| 36/36 [00:00&lt;00:00, 695.71it/s]|\nColumn Pair Trends Score: 89.29%\n\nOverall Score (Average): 89.68%",
     "crumbs": [
       "Topics",
-      "Getting Started"
+      "Evaluation",
+      "Diagnostic Report"
     ]
   },
   {
-    "objectID": "synthetic-data-generation/multi-table.html",
-    "href": "synthetic-data-generation/multi-table.html",
-    "title": "Generating Relational Data with SDV",
+    "objectID": "getting-started/getting-started-guide.html",
+    "href": "getting-started/getting-started-guide.html",
+    "title": "Getting Started with SDV",
     "section": "",
-    "text": "title: “Generating MultiTable Data with SDV” date: 2025-03-10 categories: synthetic-data-generation author: “John Doe” description: “Learn how to generate multi table synthetic data using SDV.”\n\nGenerating Relational Data with SDV\nSDV provides Multi-Table Models that help in generating relational synthetic data.\n\nSynthesizing multiple linked tables\nPreserving foreign key relationships\nEnsuring data consistency"
+    "text": "Getting Started with SDV\nThis post introduces SDV and its core functionalities."
   },
   {
     "objectID": "data-generation/index.html",
     "href": "data-generation/index.html",
-    "title": "Data Generation",
+    "title": "Synthetic Data Generation",
     "section": "",
     "text": "Data Generation\nPlaceholder content for Data Generation.\n\n\n\n\n\n\n\n\n\n\nNo matching items",
     "crumbs": [
