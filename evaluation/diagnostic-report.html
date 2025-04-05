@@ -2,13 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.42">
+<meta name="generator" content="quarto-1.6.43">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="dcterms.date" content="2025-03-21">
 
-<title>Diagnostic Report – SDV Posts</title>
+<title>diagnostic-report – SDV Posts</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -70,7 +70,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-d4d76bf8491c20bad77d141916dc28e1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap-8647a4a42273f773479d27c00df3f9ed.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
@@ -118,7 +118,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../getting-started/index.html">Topics</a></li><li class="breadcrumb-item"><a href="../evaluation/index.html">Evaluation</a></li><li class="breadcrumb-item"><a href="../evaluation/diagnostic-report.html">Diagnostic Report</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../getting-started/index.html">Topics</a></li><li class="breadcrumb-item"><a href="../evaluation/index.html">Evaluation</a></li><li class="breadcrumb-item"><a href="../evaluation/diagnostic-report.html">Diagnostic report</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -188,7 +188,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../evaluation/diagnostic-report.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Diagnostic Report</span></a>
+ <span class="menu-text">Diagnostic report</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -218,13 +218,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../getting-started/index.html">Topics</a></li><li class="breadcrumb-item"><a href="../evaluation/index.html">Evaluation</a></li><li class="breadcrumb-item"><a href="../evaluation/diagnostic-report.html">Diagnostic Report</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../getting-started/index.html">Topics</a></li><li class="breadcrumb-item"><a href="../evaluation/index.html">Evaluation</a></li><li class="breadcrumb-item"><a href="../evaluation/diagnostic-report.html">Diagnostic report</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Diagnostic Report</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">evaluation</div>
-  </div>
-  </div>
+</div>
 
 
 
@@ -250,7 +246,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h1>Diagnostic report</h1>
 <p>In this example we will use single table.</p>
 <p>The Diagnostic Report runs some basic checks for data format and validity. Run this to ensure that you have created valid synthetic data.</p>
-<div id="1480ef35" class="cell" data-execution_count="2">
+<div id="082976db" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sdv.evaluation.single_table <span class="im">import</span> run_diagnostic, evaluate_quality</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sdv.evaluation.single_table <span class="im">import</span> get_column_plot</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -271,20 +267,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell-output cell-output-stdout">
 <pre><code>Generating report ...
 
-|          | 0/9 [00:00&lt;?, ?it/s]|(1/2) Evaluating Data Validity: |          | 0/9 [00:00&lt;?, ?it/s]|(1/2) Evaluating Data Validity: |██████████| 9/9 [00:00&lt;00:00, 1839.88it/s]|
+|          | 0/9 [00:00&lt;?, ?it/s]|(1/2) Evaluating Data Validity: |          | 0/9 [00:00&lt;?, ?it/s]|(1/2) Evaluating Data Validity: |██████████| 9/9 [00:00&lt;00:00, 1663.09it/s]|
 Data Validity Score: 100.0%
 
-|          | 0/1 [00:00&lt;?, ?it/s]|(2/2) Evaluating Data Structure: |          | 0/1 [00:00&lt;?, ?it/s]|(2/2) Evaluating Data Structure: |██████████| 1/1 [00:00&lt;00:00, 503.46it/s]|
+|          | 0/1 [00:00&lt;?, ?it/s]|(2/2) Evaluating Data Structure: |          | 0/1 [00:00&lt;?, ?it/s]|(2/2) Evaluating Data Structure: |██████████| 1/1 [00:00&lt;00:00, 568.72it/s]|
 Data Structure Score: 100.0%
 
 Overall Score (Average): 100.0%
 
 Generating report ...
 
-|          | 0/9 [00:00&lt;?, ?it/s]|(1/2) Evaluating Column Shapes: |          | 0/9 [00:00&lt;?, ?it/s]|(1/2) Evaluating Column Shapes: |██████████| 9/9 [00:00&lt;00:00, 1392.02it/s]|
+|          | 0/9 [00:00&lt;?, ?it/s]|(1/2) Evaluating Column Shapes: |          | 0/9 [00:00&lt;?, ?it/s]|(1/2) Evaluating Column Shapes: |██████████| 9/9 [00:00&lt;00:00, 1421.96it/s]|
 Column Shapes Score: 90.06%
 
-|          | 0/36 [00:00&lt;?, ?it/s]|(2/2) Evaluating Column Pair Trends: |          | 0/36 [00:00&lt;?, ?it/s]|(2/2) Evaluating Column Pair Trends: |██████████| 36/36 [00:00&lt;00:00, 695.71it/s]|
+|          | 0/36 [00:00&lt;?, ?it/s]|(2/2) Evaluating Column Pair Trends: |          | 0/36 [00:00&lt;?, ?it/s]|(2/2) Evaluating Column Pair Trends: |██████████| 36/36 [00:00&lt;00:00, 706.98it/s]|
 Column Pair Trends Score: 89.29%
 
 Overall Score (Average): 89.68%

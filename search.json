@@ -62,7 +62,7 @@
     "href": "evaluation/index.html",
     "title": "Evaluating Synthetic Data",
     "section": "",
-    "text": "Diagnostic Report\n\n\n\n\n\n\nevaluation\n\n\n\n\n\n\n\n\n\nMar 21, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nEvaluating Synthetic Data Quality\n\n\n\n\n\n\nevaluation\n\n\n\n\n\n\n\n\n\nMar 21, 2025\n\n\n\n\n\n\nNo matching items",
+    "text": "Diagnostic report\n\n\n\n\n\n\n\n\n\n\n\nMar 21, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nEvaluating Synthetic Data Quality\n\n\n\n\n\n\nevaluation\n\n\n\n\n\n\n\n\n\nMar 21, 2025\n\n\n\n\n\n\nNo matching items",
     "crumbs": [
       "Topics",
       "Evaluation"
@@ -71,13 +71,13 @@
   {
     "objectID": "evaluation/diagnostic-report.html",
     "href": "evaluation/diagnostic-report.html",
-    "title": "Diagnostic Report",
+    "title": "Diagnostic report",
     "section": "",
-    "text": "Diagnostic report\nIn this example we will use single table.\nThe Diagnostic Report runs some basic checks for data format and validity. Run this to ensure that you have created valid synthetic data.\n\nfrom sdv.evaluation.single_table import run_diagnostic, evaluate_quality\nfrom sdv.evaluation.single_table import get_column_plot\n\n# 1. perform basic validity checks\ndiagnostic = run_diagnostic(real_data, synthetic_data, metadata)\n\n# 2. measure the statistical similarity\nquality_report = evaluate_quality(real_data, synthetic_data, metadata)\n\n# 3. plot the data\nfig = get_column_plot(\n    real_data=real_data,\n    synthetic_data=synthetic_data,\n    metadata=metadata,\n    column_name='amenities_fee'\n)\nfig.show()\n\nGenerating report ...\n\n|          | 0/9 [00:00&lt;?, ?it/s]|(1/2) Evaluating Data Validity: |          | 0/9 [00:00&lt;?, ?it/s]|(1/2) Evaluating Data Validity: |██████████| 9/9 [00:00&lt;00:00, 1839.88it/s]|\nData Validity Score: 100.0%\n\n|          | 0/1 [00:00&lt;?, ?it/s]|(2/2) Evaluating Data Structure: |          | 0/1 [00:00&lt;?, ?it/s]|(2/2) Evaluating Data Structure: |██████████| 1/1 [00:00&lt;00:00, 503.46it/s]|\nData Structure Score: 100.0%\n\nOverall Score (Average): 100.0%\n\nGenerating report ...\n\n|          | 0/9 [00:00&lt;?, ?it/s]|(1/2) Evaluating Column Shapes: |          | 0/9 [00:00&lt;?, ?it/s]|(1/2) Evaluating Column Shapes: |██████████| 9/9 [00:00&lt;00:00, 1392.02it/s]|\nColumn Shapes Score: 90.06%\n\n|          | 0/36 [00:00&lt;?, ?it/s]|(2/2) Evaluating Column Pair Trends: |          | 0/36 [00:00&lt;?, ?it/s]|(2/2) Evaluating Column Pair Trends: |██████████| 36/36 [00:00&lt;00:00, 695.71it/s]|\nColumn Pair Trends Score: 89.29%\n\nOverall Score (Average): 89.68%",
+    "text": "Diagnostic report\nIn this example we will use single table.\nThe Diagnostic Report runs some basic checks for data format and validity. Run this to ensure that you have created valid synthetic data.\n\nfrom sdv.evaluation.single_table import run_diagnostic, evaluate_quality\nfrom sdv.evaluation.single_table import get_column_plot\n\n# 1. perform basic validity checks\ndiagnostic = run_diagnostic(real_data, synthetic_data, metadata)\n\n# 2. measure the statistical similarity\nquality_report = evaluate_quality(real_data, synthetic_data, metadata)\n\n# 3. plot the data\nfig = get_column_plot(\n    real_data=real_data,\n    synthetic_data=synthetic_data,\n    metadata=metadata,\n    column_name='amenities_fee'\n)\nfig.show()\n\nGenerating report ...\n\n|          | 0/9 [00:00&lt;?, ?it/s]|(1/2) Evaluating Data Validity: |          | 0/9 [00:00&lt;?, ?it/s]|(1/2) Evaluating Data Validity: |██████████| 9/9 [00:00&lt;00:00, 1663.09it/s]|\nData Validity Score: 100.0%\n\n|          | 0/1 [00:00&lt;?, ?it/s]|(2/2) Evaluating Data Structure: |          | 0/1 [00:00&lt;?, ?it/s]|(2/2) Evaluating Data Structure: |██████████| 1/1 [00:00&lt;00:00, 568.72it/s]|\nData Structure Score: 100.0%\n\nOverall Score (Average): 100.0%\n\nGenerating report ...\n\n|          | 0/9 [00:00&lt;?, ?it/s]|(1/2) Evaluating Column Shapes: |          | 0/9 [00:00&lt;?, ?it/s]|(1/2) Evaluating Column Shapes: |██████████| 9/9 [00:00&lt;00:00, 1421.96it/s]|\nColumn Shapes Score: 90.06%\n\n|          | 0/36 [00:00&lt;?, ?it/s]|(2/2) Evaluating Column Pair Trends: |          | 0/36 [00:00&lt;?, ?it/s]|(2/2) Evaluating Column Pair Trends: |██████████| 36/36 [00:00&lt;00:00, 706.98it/s]|\nColumn Pair Trends Score: 89.29%\n\nOverall Score (Average): 89.68%",
     "crumbs": [
       "Topics",
       "Evaluation",
-      "Diagnostic Report"
+      "Diagnostic report"
     ]
   },
   {
